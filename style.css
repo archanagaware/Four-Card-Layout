@@ -1,13 +1,96 @@
+:root {
+    --font-family: "poppins";
+    --supervisor-border: #45D3D3;
+    --team-builder-border: #EA5353;
+    --karma-border: #FCAF4A;
+    --calculator-border: #549EF2;
+    --light-gray-font: #A3A5AE;
+    --body-bg: #FAFAFA;
+    --card-bg: #FFFFFF;
+}
 *{
     box-sizing: border-box;
     margin: 0;
 }
-
 body {
-
+    background-color: var(--body-bg);
 }
-
 .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+}
+.header-section {
+    text-align: center;
+    margin-bottom: 3em;
+}
+.header-regular {
+    font-family: var(--font-family);
+    font-weight: 200;
+}
+.header-section p {
+    font-family: var(--font-family);
+    font-size: 0.7rem;
+    color: var(--light-gray-font);
+}
+.header-bold {
+    font-family: var(--font-family);
+}
+.flex-item {
+    max-width: 22em;
+    position: relative;
+    background-color: var(--card-bg);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    min-height: 14em;
+    box-shadow: 0.1em 0.3em 0.3em 0.1em var(--light-gray-font);
+}
+.flex-item img{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+.description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--light-gray-font);
+}
+.supervisor {
+    border-top: 0.3em solid var(--supervisor-border);
+}
+.team-builder {
+    border-top: 0.3em solid var(--team-builder-border);
+}
+.karma {
+    border-top: 0.3em solid var(--karma-border);
+}
+.calculator {
+    border-top: 0.3em solid var(--calculator-border);
+}
+@media (min-width: 700px){
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-column,
+    .right-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .flex-item {
+        margin: 0 2em;
+        margin-bottom: 2em;
+    }
 }
