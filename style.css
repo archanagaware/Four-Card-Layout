@@ -33,7 +33,7 @@ body {
     font-weight: 200;
 }
 
-.header-section p {
+.header-description {
     font-family: var(--font-family);
     font-size: 0.7rem;
     color: var(--light-gray-font);
@@ -104,6 +104,10 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .header-description {
+        width: 40%;
+        margin: 0 auto;
     }
     .flex-item {
         margin: 0 2em;
