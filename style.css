@@ -16,6 +16,7 @@
 
 body {
     background-color: var(--body-bg);
+    font-family: var(--font-family);
 }
 
 .container {
@@ -29,29 +30,23 @@ body {
 }
 
 .header-regular {
-    font-family: var(--font-family);
     font-weight: 200;
 }
 
 .header-description {
-    font-family: var(--font-family);
     font-size: 0.7rem;
     color: var(--light-gray-font);
 }
 
-.header-bold {
-    font-family: var(--font-family);
-}
-
 .flex-item {
-    max-width: 22em;
+    max-width: 400px;
     background-color: var(--card-bg);
     padding: 1.5em;
     margin: 0 auto;
-    border-radius: 0.5em;
+    border-radius: 5px;
     margin-bottom: 1em;
     min-height: 14em;
-    box-shadow: 0.1em 0.3em 0.3em 0.1em var(--light-gray-font);
+    box-shadow: 3px 7px 7px 3px var(--light-gray-font);
     display: flex;
     flex-direction: column;
 }
@@ -62,31 +57,29 @@ body {
 }
 
 .title {
-    font-family: var(--font-family);
     font-weight: 600;
 }
 
 .description {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 0.9rem;
     color: var(--light-gray-font);
 }
 
 .supervisor {
-    border-top: 0.3em solid var(--supervisor-border);
+    border-top: 5px solid var(--supervisor-border);
 }
 
 .team-builder {
-    border-top: 0.3em solid var(--team-builder-border);
+    border-top: 5px solid var(--team-builder-border);
 }
 
 .karma {
-    border-top: 0.3em solid var(--karma-border);
+    border-top: 5px solid var(--karma-border);
 }
 
 .calculator {
-    border-top: 0.3em solid var(--calculator-border);
+    border-top: 5px solid var(--calculator-border);
 }
 
 @media (min-width: 700px) {
