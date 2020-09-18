@@ -85,7 +85,7 @@ body {
 @media (min-width: 700px) {
     .main {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     .left-column, .right-column {
         display: flex;
